@@ -30,36 +30,6 @@ strong {
 }
 
 </style>
-  <script>
-    const deadline = new Date(2020, 1, 11, 0, 0, 0, 0);
-    console.log(deadline);
-    const loop = () => {
-      const now = new Date();
-      const diff = deadline.getTime() - now.getTime();
-      // const days = difference.getUTCDate();
-      // const hours =   difference.getHours();
-      // const minutes = difference.getMinutes();
-      // const seconds = difference.getSeconds();
-      // const millis =  difference.getMilliseconds();
-      //
-
-      // math
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      const millis = Math.floor(diff % 1000);
-
-
-      document.getElementById("text").innerText = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + millis + "ms"
-    };
-    window.onload = () => {
-      loop();
-      setInterval(loop, 1)
-    };
-
-  </script>
-
 </head>
 
 
@@ -68,10 +38,6 @@ strong {
     <h1>Welcome to the Othercraft website!</h1>
     <aside>This site was made by Carson Graham.</aside>
   </header>
-
-  <h2><strong id="text"></strong></h2>
-
-
 
   <i>SXNsYSBJc2FiZWxh</i>
 
